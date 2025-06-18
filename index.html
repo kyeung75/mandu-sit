@@ -4,89 +4,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff;
+      background-color: #fff;
       color: #222;
     }
     header {
-      background-color: #f58c1f;
+      background-color: #181818;
+      color: white;
+      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 20px;
       flex-wrap: wrap;
     }
-    .logo {
+    .logo-title {
       display: flex;
       align-items: center;
     }
-    .logo img {
-      height: 60px;
-      margin-right: 15px;
+    .logo-title img {
+      height: 50px;
+      margin-right: 1rem;
     }
-    .nav a {
-      margin: 0 10px;
-      text-decoration: none;
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
       color: white;
-      font-weight: bold;
+      text-decoration: none;
+      font-weight: 500;
     }
     .hero {
+      background-color: #222;
+      color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 4rem 1rem;
     }
     .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     .hero p {
-      font-size: 1.2em;
-      color: #555;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
-    .buttons {
-      margin: 30px 0;
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
-    .buttons a {
-      display: inline-block;
-      background: #f58c1f;
+    .hero-buttons a {
+      background-color: #ff6600;
       color: white;
-      padding: 15px 30px;
-      margin: 10px;
-      border-radius: 5px;
+      padding: 0.75rem 1.5rem;
       text-decoration: none;
+      border-radius: 4px;
       font-weight: bold;
     }
-    .about, .contact {
-      padding: 40px 20px;
+    .image-placeholder {
+      height: 300px;
+      background-color: #ccc;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #555;
+    }
+    .about-section {
+      padding: 2rem;
       max-width: 800px;
       margin: auto;
+      line-height: 1.6;
     }
-    .section-title {
-      font-size: 2em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .image-placeholder {
-      width: 100%;
-      height: 300px;
-      background: #ddd;
-      margin: 20px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #888;
-      font-size: 1.2em;
+    @media (max-width: 600px) {
+      .logo-title {
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="./logo.png" alt="WAD Logo" />
-      <h2 style="color:white">What A Dumpling</h2>
+    <div class="logo-title">
+      <img src="Screenshot_20250616_122206_Gallery.png" alt="Logo" />
+      <h2>What A Dumpling</h2>
     </div>
-    <nav class="nav">
+    <nav>
       <a href="#about">About</a>
       <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
       <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
@@ -96,36 +112,31 @@
   </header>  <section class="hero">
     <h1>Welcome to What A Dumpling</h1>
     <p>Authentic Korean dumplings made fresh daily since 2006</p>
-    <div class="buttons">
+    <div class="hero-buttons">
       <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
       <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
       <a href="https://g.co/kgs/rcVvsYL">Google</a>
       <a href="https://what-a-dumpling.square.site/">Pick Up Order</a>
     </div>
-  </section>  <section id="about" class="about">
-    <div class="section-title">About</div>
+  </section>  <section class="image-placeholder">
+    [Image Space Placeholder]
+  </section>  <section class="about-section" id="about">
+    <h2>About</h2>
     <p>
-      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area.
-      For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true,
-      that love will continue.
+      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.
     </p>
     <p>
-      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find
-      in dumplings made by Korean mothers and grandmothers.
+      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.
     </p>
     <p>
-      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items
-      are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea.
+      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.
     </p>
     <p>
-      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the
-      Chicago area continue this tradition by making manduguk with our dumplings.
+      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.
     </p>
     <p>
       Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.
     </p>
-  </section>  <section class="image-placeholder">
-    [ Add restaurant image here later ]
   </section>
 </body>
 </html>
