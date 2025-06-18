@@ -3,94 +3,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff7f0;
+      background-color: #fff8f0;
       color: #333;
-    }
-    header {
-      background-color: #f26924;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-    }
-    header img {
-      height: 60px;
-      margin-right: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    .hero {
-      background-image: url("/mnt/data/file-JzaDph3pfb8EpV25niJHbV");
-      background-size: cover;
-      background-position: center;
-      height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-      text-align: center;
-      padding: 0 20px;
-    }
-    .hero h2 {
-      font-size: 36px;
-    }
-    .about {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
       line-height: 1.6;
     }
-    .info {
-      text-align: center;
-      margin: 30px 0;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f15a22;
+      padding: 1rem 2rem;
     }
-    .info p {
-      margin: 5px 0;
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
-    .buttons {
-      text-align: center;
-      margin-bottom: 40px;
+    .logo-area img {
+      height: 48px;
+      border-radius: 50%;
     }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #333;
+    nav a {
       color: white;
       text-decoration: none;
-      border-radius: 4px;
+      margin-left: 1.5rem;
+      font-weight: 600;
     }
-    .buttons a:hover {
-      background-color: #555;
+    .hero {
+      background-image: url('https://raw.githubusercontent.com/kyeung75/mandu-sit/main/1750223361306.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .buttons a {
+      background-color: #f15a22;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffc;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="/mnt/data/file-MfyZdavLC4viygAyK6CPFa" alt="What A Dumpling Logo" />
-    <h1>What A Dumpling</h1>
+    <div class="logo-area">
+      <img src="https://raw.githubusercontent.com/kyeung75/mandu-sit/main/Screenshot_20250616_122206_Gallery.jpg" alt="What A Dumpling Logo">
+      <h2 style="color:white; font-size: 1.5rem;">What A Dumpling</h2>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
+      <a href="https://what-a-dumpling.square.site/" target="_blank">Order Pickup</a>
+    </nav>
   </header>  <section class="hero">
-    <h2>Authentic Korean Dumplings Since 2006</h2>
-  </section>  <section class="about">
-    <p>What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.</p>
-    <p>Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.</p>
-    <p>We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.</p>
-    <p>There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.</p>
-    <p>Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.</p>
-  </section>  <div class="info">
-    <p>📍 801 Civic Center Dr, Niles, IL 60714</p>
-    <p>📞 (847) 966-8000</p>
-  </div>  <div class="buttons">
+    <h1>Authentic Korean Dumplings</h1>
+    <p>Made fresh daily since 2006</p>
+  </section>  <div class="buttons">
+    <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+    <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
     <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
-    <a href="https://www.doordash.com/store/what-a-dumpling-niles-1223640" target="_blank">DoorDash</a>
-    <a href="https://www.ubereats.com/store/what-a-dumpling/XhRgm5FDUka1N1fLUVDpyg" target="_blank">Uber Eats</a>
-  </div>
+    <a href="https://what-a-dumpling.square.site/" target="_blank">Pick Up Order</a>
+  </div>  <footer>
+    📞 <a href="tel:+18475832938">(847) 583-2938</a> &nbsp;•&nbsp;
+    📍 <a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">
+      801 Civic Center Dr Ste 116, Niles, IL 60714
+    </a>
+  </footer>
 </body>
 </html>
