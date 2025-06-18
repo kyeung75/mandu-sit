@@ -4,112 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-      text-align: center;
-    }
-
-    header {
-      background-color: #f7941d;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    header img {
-      height: 60px;
-      margin-right: 12px;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      color: white;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-    }
-
-    .content {
-      padding: 2rem 1rem;
-    }
-
-    .content p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-      font-weight: 500;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #f7941d;
-      color: white;
-      padding: 0.9rem 2.5rem;
-      margin: 0.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .footer {
-      margin-top: 2.5rem;
-      padding: 1rem;
-      font-size: 0.95rem;
-    }
-
-    .footer a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .footer span {
-      display: block;
-      margin-top: 0.5rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
 
-  <header>
-    <img src="Screenshot_20250616_122206_Gallery.png" alt="WAD Logo" />
-    <h1>What A Dumpling</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#menu">Menu</a>
-      <a href="#location">Location</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="bg-orange-500 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-4">
+        <img src="your-logo-url.png" class="h-14" alt="WAD Logo">
+        <h1 class="text-2xl font-bold">What A Dumpling</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#location" class="hover:underline">Location</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="content">
-    <p>Our delicious handmade dumplings are coming soon. Stay tuned!</p>
-    <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" class="button">DoorDash</a>
-    <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" class="button">Uber Eats</a>
-    <a href="https://g.co/kgs/rcVvsYL" class="button">Google</a>
-    <a href="https://what-a-dumpling.square.site/" class="button">Pick Up Order</a>
-  </div>
+  <main class="container mx-auto text-center py-12 px-6">
+    <p class="text-xl md:text-2xl font-medium mb-8">Our delicious handmade dumplings are coming soon. Stay tuned!</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="..." class="bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">DoorDash</a>
+      <a href="..." class="bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">Uber Eats</a>
+      <a href="..." class="bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">Google</a>
+      <a href="..." class="bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">Pick Up Order</a>
+    </div>
 
-  <div class="footer">
-    <a href="tel:+18475832938">📞 (847) 583-2938</a>
-    <span><a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714">📍 801 Civic Center Dr Ste 116, Niles, IL 60714</a></span>
-  </div>
+    <div id="contact" class="mt-10 text-center text-lg">
+      <a href="tel:+18475832938" class="flex items-center justify-center space-x-2 text-orange-500"><span>📞</span><span>(847) 583‑2938</span></a>
+      <br>
+      <a href="https://maps.google.com/?q=801+Civic+Center+Dr+Ste+116,Niles,IL 60714" class="flex items-center justify-center space-x-2 text-orange-500 mt-2">
+        <span>📍</span><span>801 Civic Center Dr Ste 116, Niles, IL 60714</span>
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
