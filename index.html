@@ -3,106 +3,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      background-image: url('1750223361306.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff7f0;
+      color: #333;
     }
     header {
+      background-color: #f26924;
+      color: white;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
     }
-    .logo-title {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    .logo-title img {
+    header img {
       height: 60px;
+      margin-right: 20px;
     }
-    .logo-title h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
     }
-    main {
-      text-align: center;
-      padding: 6rem 2rem 8rem;
-      background-color: rgba(0, 0, 0, 0.4);
-      min-height: 80vh;
-    }
-    .about {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    footer {
+    .hero {
+      background-image: url("/mnt/data/file-JzaDph3pfb8EpV25niJHbV");
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 0 20px;
     }
-    footer a {
+    .hero h2 {
+      font-size: 36px;
+    }
+    .about {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    .info {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .info p {
+      margin: 5px 0;
+    }
+    .buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #333;
       color: white;
       text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border: 2px solid white;
-      border-radius: 25px;
-      transition: all 0.3s;
+      border-radius: 4px;
     }
-    footer a:hover {
-      background-color: white;
-      color: black;
-    }
-    @media (max-width: 768px) {
-      .logo-title h1 {
-        font-size: 1.4rem;
-      }
-      footer {
-        flex-direction: column;
-        align-items: center;
-      }
+    .buttons a:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-title">
-      <img src="logo.png" alt="What A Dumpling Logo">
-      <h1>What A Dumpling</h1>
-    </div>
-  </header>  <main>
-    <section class="about">
-      <p>
-        What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.
-        <br /><br />
-        Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.
-        <br /><br />
-        We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.
-        <br /><br />
-        There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.
-        <br /><br />
-        Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.
-      </p>
-    </section>
-  </main>  <footer>
+    <img src="/mnt/data/file-MfyZdavLC4viygAyK6CPFa" alt="What A Dumpling Logo" />
+    <h1>What A Dumpling</h1>
+  </header>  <section class="hero">
+    <h2>Authentic Korean Dumplings Since 2006</h2>
+  </section>  <section class="about">
+    <p>What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.</p>
+    <p>Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.</p>
+    <p>We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.</p>
+    <p>There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.</p>
+    <p>Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.</p>
+  </section>  <div class="info">
+    <p>📍 801 Civic Center Dr, Niles, IL 60714</p>
+    <p>📞 (847) 966-8000</p>
+  </div>  <div class="buttons">
     <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
-    <a href="https://www.doordash.com/store/what-a-dumpling-niles-25593043/" target="_blank">DoorDash</a>
-    <a href="https://www.ubereats.com/store/what-a-dumpling/" target="_blank">Uber Eats</a>
-  </footer>
+    <a href="https://www.doordash.com/store/what-a-dumpling-niles-1223640" target="_blank">DoorDash</a>
+    <a href="https://www.ubereats.com/store/what-a-dumpling/XhRgm5FDUka1N1fLUVDpyg" target="_blank">Uber Eats</a>
+  </div>
 </body>
 </html>
