@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,129 +7,114 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('1750223361306.jpg') no-repeat center center fixed;
+      background-image: url('https://raw.githubusercontent.com/kyeung75/mandu-sit/main/1750223361306.jpg');
       background-size: cover;
+      background-position: center;
       color: #fff;
-      text-align: center;
-    }
+    }header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    header {
-      background-color: #333;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5em 1em;
-    }
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
 
-    header img {
-      height: 50px;
-      margin-right: 0.5em;
-    }
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
 
-    .branding {
-      display: flex;
-      align-items: center;
-    }
+nav {
+  display: flex;
+  gap: 15px;
+}
 
-    .branding h1 {
-      font-size: 1.5em;
-      margin: 0;
-    }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    nav a {
-      margin: 0 0.8em;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-    }
+.content {
+  padding: 80px 20px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
 
-    .hero {
-      margin: 100px auto 40px;
-      padding: 1em;
-      background-color: rgba(0, 0, 0, 0.4);
-      max-width: 700px;
-      border-radius: 8px;
-    }
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
 
-    .hero h2 {
-      font-size: 2.5em;
-      margin: 0.2em 0;
-    }
+.content p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
 
-    .hero p {
-      font-size: 1.2em;
-      margin-top: 0.5em;
-    }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
 
-    .buttons {
-      margin: 2em auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1em;
-    }
+footer a {
+  color: #00aced;
+  text-decoration: none;
+}
 
-    .buttons a {
-      background-color: #444;
-      color: white;
-      text-decoration: none;
-      padding: 0.8em 1.5em;
-      border-radius: 5px;
-      font-size: 1em;
-      min-width: 150px;
-    }
-
-    .footer {
-      background-color: #222;
-      color: #ccc;
-      padding: 1em;
-      font-size: 0.95em;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .buttons a {
-        width: 80%;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
-    <div class="branding">
-      <img src="Screenshot_20250616_122206_Gallery.jpg" alt="Logo" />
-      <h1>What A Dumpling</h1>
-    </div>
+    <h1>
+      <img src="https://raw.githubusercontent.com/kyeung75/mandu-sit/main/Screenshot_20250616_122206_Gallery.png" alt="Logo" />
+      What A Dumpling
+    </h1>
     <nav>
       <a href="#about">About</a>
-      <a href="https://www.doordash.com/store/33402601">DoorDash</a>
-      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ">Uber Eats</a>
-      <a href="https://g.co/kgs/rcVvsY">Google</a>
-      <a href="https://what-a-dumpling.square.site/">Order Pickup</a>
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
+      <a href="https://what-a-dumpling.square.site/" target="_blank">Order Pickup</a>
     </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Authentic Korean Dumplings</h2>
-    <p>Made fresh daily since 2006</p>
-  </section>
-
-  <div class="buttons">
-    <a href="https://www.doordash.com/store/33402601">DoorDash</a>
-    <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ">Uber Eats</a>
-    <a href="https://g.co/kgs/rcVvsY">Google</a>
-    <a href="https://what-a-dumpling.square.site/">Pick Up Order</a>
-  </div>
-
-  <div class="footer">
-    📞 <a href="tel:+18475832938" style="color: #ccc;">(847) 583-2938</a> · 📍
-    <a href="https://maps.google.com/?q=801 Civic Center Dr Ste 116, Niles, IL 60714" style="color: #ccc;">
-      801 Civic Center Dr Ste 116, Niles, IL 60714
-    </a>
-  </div>
+  </header>  <main class="content" id="about">
+    <h2>About</h2>
+    <p>
+      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area.
+      For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true,
+      that love will continue.
+    </p>
+    <p>
+      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d
+      find in dumplings made by Korean mothers and grandmothers.
+    </p>
+    <p>
+      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items
+      are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of
+      Korea, just as we have for the past two decades.
+    </p>
+    <p>
+      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the
+      Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their
+      roots and celebrate the new year with love and nostalgia.
+    </p>
+    <p>Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.</p>
+  </main>  <footer>
+    <p>
+      📞 <a href="tel:8475832938">(847) 583-2938</a> &nbsp; 📍 <a href="https://maps.google.com/?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
+    </p>
+  </footer>
 </body>
 </html>
