@@ -7,89 +7,84 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://raw.githubusercontent.com/kyeung75/mandu-sit/main/1750223361306.jpg') no-repeat center center fixed;
+      background-image: url('1750223361306.jpg');
       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: white;
-      text-align: center;
     }header {
-  background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: #333;
 }
 
 header img {
-  height: 50px;
+  height: 40px;
   margin-right: 10px;
 }
 
-.logo-title {
-  display: flex;
-  align-items: center;
-  font-size: 1.5em;
-  font-weight: bold;
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 nav a {
   color: white;
-  margin: 0 12px;
+  margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.content {
+.main-text {
   max-width: 800px;
-  margin: 60px auto 40px;
+  margin: 100px auto 50px;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.footer {
+footer {
   background-color: #222;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
   color: #fff;
-  padding: 10px;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #add8e6;
   text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
 }
 
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-title">
-      <img src="https://raw.githubusercontent.com/kyeung75/mandu-sit/main/Screenshot_20250616_122206_Gallery.png" alt="Logo" />
-      <span>What A Dumpling</span>
+    <div style="display: flex; align-items: center;">
+      <img src="Screenshot_20250616_122206_Gallery.png" alt="Logo" />
+      <h1>What A Dumpling</h1>
     </div>
     <nav>
-      <a href="#">DoorDash</a>
-      <a href="#">Uber Eats</a>
-      <a href="#">Google</a>
-      <a href="#">Order Pickup</a>
+      <a href="#doordash">DoorDash</a>
+      <a href="#ubereats">Uber Eats</a>
+      <a href="#google">Google</a>
+      <a href="#pickup">Order Pickup</a>
     </nav>
-  </header>  <div class="content">
-    <p style="font-size: 1.2em; font-weight: 500; line-height: 1.8em; text-shadow: 1px 1px 4px #000;">
-      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.<br><br>
-      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.<br><br>
-      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.<br><br>
-      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.<br><br>
-      Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.
-    </p>
-  </div>  <div class="footer">
-    📞 <a href="tel:+18475832938">(847) 583-2938</a> &nbsp;&bull;&nbsp; 📍 <a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
-  </div>
+  </header>  <div class="main-text">
+    <p>What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.</p>
+    <p>Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.</p>
+    <p>We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.</p>
+    <p>There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.</p>
+    <p>Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.</p>
+  </div>  <footer>
+    <div>
+      📞 <a href="tel:+18475832938">(847) 583-2938</a> • 📍 <a href="https://maps.google.com/?q=801 Civic Center Dr Ste 116, Niles, IL 60714" target="_blank">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
+    </div>
+  </footer>
 </body>
 </html>
