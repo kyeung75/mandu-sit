@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,134 +10,120 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff;
-      color: #222;
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
     }
-    header {
-      background-color: #181818;
-      color: white;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .logo-title {
-      display: flex;
-      align-items: center;
-    }
-    .logo-title img {
-      height: 50px;
-      margin-right: 1rem;
-    }
-    nav {
-      display: flex;
-      gap: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
+
     .hero {
-      background-color: #222;
-      color: white;
+      background: url('https://github.com/kyeung75/mandu-sit/blob/main/1750223361306.jpg?raw=true') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
-      padding: 4rem 1rem;
+      color: white;
+      position: relative;
     }
-    .hero h1 {
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.55);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 1.5rem;
+    }
+
+    .hero-content h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+
+    .hero-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #f1f1f1;
     }
-    .hero-buttons {
+
+    .buttons {
+      margin: 2rem 0;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       gap: 1rem;
     }
-    .hero-buttons a {
-      background-color: #ff6600;
-      color: white;
-      padding: 0.75rem 1.5rem;
+
+    .buttons a {
       text-decoration: none;
-      border-radius: 4px;
+      background-color: #f57c00;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
       font-weight: bold;
+      transition: background 0.3s;
     }
-    .image-placeholder {
-      height: 300px;
-      background-color: #ccc;
+
+    .buttons a:hover {
+      background-color: #e65100;
+    }
+
+    footer {
+      background-color: #fff3e0;
       text-align: center;
-      display: flex;
+      padding: 2rem 1rem;
+    }
+
+    footer .buttons {
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: #555;
+      gap: 1rem;
     }
-    .about-section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-    }
+
     @media (max-width: 600px) {
-      .logo-title {
-        justify-content: center;
-        margin-bottom: 1rem;
+      .hero-content h1 {
+        font-size: 1.8rem;
       }
-      nav {
-        justify-content: center;
-        flex-wrap: wrap;
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      footer .buttons {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-title">
-      <img src="Screenshot_20250616_122206_Gallery.png" alt="Logo" />
-      <h2>What A Dumpling</h2>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to What A Dumpling</h1>
+      <p>Authentic Korean dumplings made fresh daily since 2006</p>
     </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
-      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
-      <a href="https://g.co/kgs/rcVvsYL">Google</a>
-      <a href="https://what-a-dumpling.square.site/">Order Pickup</a>
-    </nav>
-  </header>  <section class="hero">
-    <h1>Welcome to What A Dumpling</h1>
-    <p>Authentic Korean dumplings made fresh daily since 2006</p>
-    <div class="hero-buttons">
-      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
-      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
-      <a href="https://g.co/kgs/rcVvsYL">Google</a>
-      <a href="https://what-a-dumpling.square.site/">Pick Up Order</a>
-    </div>
-  </section>  <section class="image-placeholder">
-    [Image Space Placeholder]
-  </section>  <section class="about-section" id="about">
-    <h2>About</h2>
-    <p>
-      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.
-    </p>
-    <p>
-      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.
-    </p>
-    <p>
-      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.
-    </p>
-    <p>
-      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.
-    </p>
-    <p>
-      Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.
-    </p>
   </section>
+
+  <footer>
+    <div class="buttons">
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
+      <a href="https://what-a-dumpling.square.site/" target="_blank">Pick Up Order</a>
+    </div>
+  </footer>
+
 </body>
 </html>
