@@ -1,90 +1,105 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>What A Dumpling</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('1750223361306.jpg');
+      font-family: 'Segoe UI', sans-serif;
+      background: url('Screenshot_20250616_122206_Gallery.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       color: white;
-    }header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-}
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
 
-header img {
-  height: 40px;
-  margin-right: 10px;
-}
+    .header {
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
 
-nav a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .logo-title img {
+      height: 40px;
+      margin-right: 10px;
+    }
 
-.main-text {
-  max-width: 800px;
-  margin: 100px auto 50px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
+    .logo-title span {
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-footer {
-  background-color: #222;
-  padding: 15px;
-  text-align: center;
-  font-size: 0.9rem;
-}
+    .nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
+    .content {
+      max-width: 800px;
+      margin: 80px auto 40px;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
 
+    .footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div style="display: flex; align-items: center;">
-      <img src="Screenshot_20250616_122206_Gallery.png" alt="Logo" />
-      <h1>What A Dumpling</h1>
+  <div class="header">
+    <div class="logo-title">
+      <img src="Screenshot_20250616_122206_Gallery.png" alt="What A Dumpling Logo">
+      <span>What A Dumpling</span>
     </div>
-    <nav>
-      <a href="#doordash">DoorDash</a>
-      <a href="#ubereats">Uber Eats</a>
-      <a href="#google">Google</a>
-      <a href="#pickup">Order Pickup</a>
-    </nav>
-  </header>  <div class="main-text">
-    <p>What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.</p>
-    <p>Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.</p>
-    <p>We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.</p>
-    <p>There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.</p>
-    <p>Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.</p>
-  </div>  <footer>
-    <div>
-      📞 <a href="tel:+18475832938">(847) 583-2938</a> • 📍 <a href="https://maps.google.com/?q=801 Civic Center Dr Ste 116, Niles, IL 60714" target="_blank">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
+    <div class="nav">
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL">Google</a>
+      <a href="https://what-a-dumpling.square.site/">Order Pickup</a>
     </div>
-  </footer>
+  </div>
+
+  <div class="content">
+    <p>
+      What A Dumpling has proudly remained in the same location since 2006, when H Mart first opened in the Chicago area. For nearly 20 years, we’ve been loved as a local favorite — and we believe that as long as the taste of our food stays true, that love will continue.
+    </p>
+    <p>
+      Our dumplings are all made from traditional Korean home-style recipes. The flavors reflect the same care and heart you’d find in dumplings made by Korean mothers and grandmothers.
+    </p>
+    <p>
+      We take special pride in our jumbo dumplings and Galbitang, which many consider the best in the area. These signature items are not just dishes — they’re a promise to our customers that we will continue to protect and share the authentic taste of Korea, just as we have for the past two decades.
+    </p>
+    <p>
+      There is a long-standing Korean tradition of eating dumpling soup (manduguk) on New Year’s Day. Many Koreans living in the Chicago area continue this tradition by making manduguk with our dumplings — a comforting way to stay connected to their roots and celebrate the new year with love and nostalgia.
+    </p>
+    <p>
+      Come taste the tradition, and let us serve you food that’s made fresh every day, with heart.
+    </p>
+  </div>
+
+  <div class="footer">
+    📞 <a href="tel:+18475832938">(847) 583-2938</a> · 📍 <a href="https://maps.google.com/?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
+  </div>
 </body>
 </html>
