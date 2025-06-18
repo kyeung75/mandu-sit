@@ -1,108 +1,115 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background: #fff;
+      color: #333;
+      text-align: center;
     }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #ffffff;
-      color: #333333;
-      line-height: 1.6;
-    }
+
     header {
+      background-color: #f7941d;
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background-color: #f68c1f;
-      padding: 0.7em 1.5em;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+
     header img {
-      height: 50px;
+      height: 60px;
+      margin-right: 12px;
     }
+
     header h1 {
-      font-size: 1.5em;
+      font-size: 1.8rem;
       color: white;
-      margin-left: 1em;
+      margin: 0;
     }
+
     nav {
-      background: #f68c1f;
-      padding: 0.5em 0;
-      text-align: center;
+      margin-top: 0.5rem;
     }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1em;
-    }
-    .container {
-      text-align: center;
-      padding: 2em 1em;
-    }
-    .container h2 {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-    }
-    .btn-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    .btn-group a {
-      background-color: #f68c1f;
-      color: white;
-      text-decoration: none;
-      padding: 1em;
-      border-radius: 10px;
-      font-size: 1em;
       font-weight: bold;
+      color: white;
     }
-    footer {
-      margin-top: 2em;
-      padding: 1em;
-      text-align: center;
-      font-size: 0.95em;
+
+    .content {
+      padding: 2rem 1rem;
     }
-    footer a {
+
+    .content p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #f7941d;
+      color: white;
+      padding: 0.9rem 2.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .footer a {
       color: #007bff;
       text-decoration: none;
+    }
+
+    .footer span {
+      display: block;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="Screenshot_20250616_122206_Gallery.png" alt="WAD Logo" />
     <h1>What A Dumpling</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="https://g.co/kgs/rcVvsYL" target="_blank">Menu</a>
-    <a href="https://www.google.com/maps/place/801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">Location</a>
-    <a href="tel:+18475832938">Contact</a>
-  </nav>
-  <div class="container">
-    <h2>Our delicious handmade dumplings are coming soon. Stay tuned!</h2>
-    <div class="btn-group">
-      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
-      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
-      <a href="https://www.google.com/maps/place/801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">Google Maps</a>
-      <a href="https://what-a-dumpling.square.site/" target="_blank">Pick Up Order</a>
-    </div>
+
+  <div class="content">
+    <p>Our delicious handmade dumplings are coming soon. Stay tuned!</p>
+    <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" class="button">DoorDash</a>
+    <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" class="button">Uber Eats</a>
+    <a href="https://g.co/kgs/rcVvsYL" class="button">Google</a>
+    <a href="https://what-a-dumpling.square.site/" class="button">Pick Up Order</a>
   </div>
-  <footer>
-    <p>
-      <a href="tel:+18475832938">📞 (847) 583-2938</a> &nbsp; | &nbsp;
-      <a href="https://www.google.com/maps/place/801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">📍 801 Civic Center Dr Ste 116, Niles, IL 60714</a>
-    </p>
-  </footer>
+
+  <div class="footer">
+    <a href="tel:+18475832938">📞 (847) 583-2938</a>
+    <span><a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714">📍 801 Civic Center Dr Ste 116, Niles, IL 60714</a></span>
+  </div>
+
 </body>
 </html>
