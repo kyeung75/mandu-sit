@@ -4,122 +4,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }body, html {
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.background {
-  background: url('1750223361306.jpg') no-repeat center center/cover;
-  height: 100%;
-  width: 100%;
-  color: white;
-  text-shadow: 1px 1px 5px black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1em 2em;
-}
-
-header img {
-  height: 50px;
-  margin-right: 1em;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1em;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-top: 2em;
-  text-align: center;
-}
-
-h3 {
-  margin-top: 0.5em;
-  font-weight: normal;
-}
-
-.buttons {
-  margin-top: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-}
-
-.buttons a {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 0.75em 1.5em;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  margin-top: auto;
-  margin-bottom: 2em;
-  text-align: center;
-  font-size: 0.95em;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    margin-top: 1em;
-  }
-}
-
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background-image: url('1750223361306.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: rgba(34, 34, 34, 0.9);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+      margin-right: 1em;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      text-align: center;
+      padding: 4em 1em 2em;
+    }
+    .content h1 {
+      font-size: 2.5em;
+      margin: 0.5em 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .content p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .buttons {
+      margin: 2em 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    .buttons a {
+      background-color: #ff5722;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px #000;
+    }
+    .footer {
+      text-align: center;
+      font-size: 1em;
+      padding: 2em 1em;
+      text-shadow: 1px 1px 3px #000;
+    }
   </style>
 </head>
 <body>
-  <div class="background">
-    <header>
-      <div style="display: flex; align-items: center">
-        <img src="Screenshot_20250616_122206_Gallery.jpg" alt="What A Dumpling Logo" />
-        <span style="font-size: 1.5em; font-weight: bold">What A Dumpling</span>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
-        <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
-        <a href="https://g.co/kgs/rcVvsYL">Google</a>
-        <a href="https://what-a-dumpling.square.site/">Order Pickup</a>
-      </nav>
-    </header><main style="text-align: center; margin-top: 6em">
-  <h1>Authentic Korean Dumplings</h1>
-  <h3>Made fresh daily since 2006</h3>
-  <div class="buttons">
-    <a href="https://www.doordash.com/store/33402601?utm_source=mx_share">DoorDash</a>
-    <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY">Uber Eats</a>
-    <a href="https://g.co/kgs/rcVvsYL">Google</a>
-    <a href="https://what-a-dumpling.square.site/">Pick Up Order</a>
-  </div>
-</main>
-
-<footer>
-  <p>📞 <a href="tel:+18475832938" style="color:white; text-decoration: none">(847) 583-2938</a> &nbsp;📍 <a href="https://goo.gl/maps/yP8p7tc1mCR7ULoB7" style="color:white; text-decoration: none">801 Civic Center Dr Ste 116, Niles, IL 60714</a></p>
-</footer>
-
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="/mandu-sit/Screenshot_20250616_122206_Gallery.jpg" alt="What A Dumpling Logo" />
+      <h1 style="margin: 0; font-size: 1.5em;">What A Dumpling</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
+      <a href="https://what-a-dumpling.square.site/" target="_blank">Order Pickup</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h1>Authentic Korean Dumplings</h1>
+    <p>Made fresh daily since 2006</p>
+    <div class="buttons">
+      <a href="https://www.doordash.com/store/33402601?utm_source=mx_share" target="_blank">DoorDash</a>
+      <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
+      <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
+      <a href="https://what-a-dumpling.square.site/" target="_blank">Pick Up Order</a>
+    </div>
+  </main>
+  <div class="footer">
+    📞 <a href="tel:+18475832938" style="color:white; text-decoration: none;">(847) 583-2938</a> • 📍 <a href="https://g.co/kgs/rcVvsYL" target="_blank" style="color:white; text-decoration: none;">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
   </div>
 </body>
 </html>
