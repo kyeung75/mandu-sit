@@ -1,115 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
       color: #333;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      background: #f28c00;
-      padding: 1rem;
-    }
-    header img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      margin-right: 1rem;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      color: #fff;
-      margin: 0;
-    }
-    nav {
-      margin-left: auto;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 500;
-    }
-    main {
-      padding: 1rem;
+      line-height: 1.6;
       text-align: center;
     }
-    main h2 {
-      font-size: 1.6rem;
-      margin-top: 1rem;
-    }
-    .buttons {
-      margin-top: 1.5rem;
-    }
-    .buttons a {
-      display: inline-block;
-      background: #006cff;
+    header {
+      background: #f7941d;
       color: #fff;
-      padding: 0.8rem 1.2rem;
-      margin: 0.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 1rem;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-
-    @media (max-width: 600px) {
+    header img {
+      height: 60px;
+      margin-right: 1em;
+    }
+    header h1 {
+      font-size: 1.8em;
+      flex-grow: 1;
+      text-align: left;
+    }
+    nav {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    main {
+      padding: 2em;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 1em 2em;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background: #eee;
+      padding: 1em;
+      margin-top: 2em;
+      font-size: 0.9em;
+    }
+    @media screen and (max-width: 600px) {
       header {
         flex-direction: column;
         align-items: center;
       }
-      header img {
-        margin-bottom: 0.5rem;
+      header h1 {
+        text-align: center;
       }
       nav {
-        margin: 0;
+        flex-direction: column;
       }
-      main h2 {
-        font-size: 1.4rem;
-      }
-      .buttons a {
-        width: 80%;
-      }
-    }
-    footer {
-      background: #f5f5f5;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="What A Dumpling Logo">
+    <img src="Screenshot_20250616_122206_Gallery.png" alt="Logo" />
     <h1>What A Dumpling</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#menu">Menu</a>
-      <a href="#location">Location</a>
-      <a href="#contact">Contact</a>
+      <a href="https://www.google.com/search?q=what+a+dumpling+niles+il" target="_blank">Menu</a>
+      <a href="https://maps.google.com/?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">Location</a>
+      <a href="tel:+18475832938">Contact</a>
     </nav>
   </header>
-
   <main>
-    <h2>Our delicious handmade dumplings are coming soon. Stay tuned!</h2>
-    <div class="buttons">
-      <a href="https://www.doordash.com/store/what-a-dumpling-niles-il">DoorDash</a>
-      <a href="https://www.ubereats.com/store/what-a-dumpling">Uber Eats</a>
-      <a href="https://maps.app.goo.gl/rcVvsYL">Google Maps</a>
-    </div>
-  </main>
-
-  <footer id="contact">
-    📞 (847) 583‑2938 • 📍 801 Civic Center Dr Ste 116, Niles, IL 60714<br>
-    Hours: Mon–Thu 10 AM–6 PM, Fri–Sun 10 AM–7 PM
-  </footer>
-
-</body>
-</html>
+    <h2
