@@ -3,94 +3,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What A Dumpling</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
     }
     body {
-      background-color: #fff8f0;
-      color: #333;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background-color: #fdf6ee;
     }
     header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      background-color: #f15a22;
-      padding: 1rem 2rem;
+      justify-content: space-between;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .logo-area {
+    .logo {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
     }
-    .logo-area img {
-      height: 48px;
-      border-radius: 50%;
+    .logo img {
+      height: 50px;
+      margin-right: 0.5em;
     }
     nav a {
-      color: white;
+      margin-left: 1.2em;
       text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
+      color: #333;
+      font-weight: 500;
     }
     .hero {
-      background-image: url('https://raw.githubusercontent.com/kyeung75/mandu-sit/main/1750223361306.jpg');
+      background-image: url('1750223361306.jpg');
       background-size: cover;
       background-position: center;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
-      color: white;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      padding: 6em 1em 4em;
     }
     .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px #000;
     }
     .hero p {
-      font-size: 1.25rem;
+      margin-top: 1em;
+      font-size: 1.2em;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
     }
     .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem 0;
+      text-align: center;
+      margin: 2em 0;
     }
     .buttons a {
-      background-color: #f15a22;
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.8em 1.5em;
+      background-color: #333;
       color: white;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      font-weight: 600;
+      border-radius: 4px;
+      font-weight: bold;
     }
-    footer {
+    .contact {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 1.5em 1em;
+      font-size: 1em;
     }
-    footer a {
-      color: #ffc;
+    .contact a {
+      color: #ffde59;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-area">
-      <img src="https://raw.githubusercontent.com/kyeung75/mandu-sit/main/Screenshot_20250616_122206_Gallery.jpg" alt="What A Dumpling Logo">
-      <h2 style="color:white; font-size: 1.5rem;">What A Dumpling</h2>
+    <div class="logo">
+      <img src="Screenshot_20250616_122206_Gallery.png" alt="What A Dumpling Logo" />
+      <h1>What A Dumpling</h1>
     </div>
     <nav>
       <a href="#about">About</a>
@@ -107,11 +102,10 @@
     <a href="https://www.ubereats.com/store/what-a-dumpling/bqj6CzDaVVWD2Zv3G7EgZQ?diningMode=DELIVERY" target="_blank">Uber Eats</a>
     <a href="https://g.co/kgs/rcVvsYL" target="_blank">Google</a>
     <a href="https://what-a-dumpling.square.site/" target="_blank">Pick Up Order</a>
-  </div>  <footer>
-    📞 <a href="tel:+18475832938">(847) 583-2938</a> &nbsp;•&nbsp;
-    📍 <a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">
-      801 Civic Center Dr Ste 116, Niles, IL 60714
-    </a>
-  </footer>
+  </div>  <div class="contact">
+    <p>
+      🔊 <a href="tel:+18475832938">(847) 583-2938</a> &bull; 🔹 <a href="https://www.google.com/maps?q=801+Civic+Center+Dr+Ste+116,+Niles,+IL+60714" target="_blank">801 Civic Center Dr Ste 116, Niles, IL 60714</a>
+    </p>
+  </div>
 </body>
 </html>
